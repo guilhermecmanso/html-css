@@ -2,14 +2,28 @@
 
 /* font-family: 'Passion One', sans-serif;
 font-family: 'Sriracha', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
+
+
 
 html , body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -21,13 +35,12 @@ header {
 header h1 {
     margin: auto;
     font-variant: small-caps;
-    font-family: 'Passion One';
-    font-size: 10vh;
+    font-family: var(--fonte2);
     padding-top: 50px;
+    font-size: 10vw;
 }
 
 header p {
-    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
 }
 
@@ -35,7 +48,6 @@ header a, footer a {
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
@@ -46,6 +58,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -56,12 +70,35 @@ section.normal {
 section.imagem {
     background-color: brown;
     color: whitesmoke;
-    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > pre {
-    background-color: rgba(0, 0, 0, 0.301);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.501);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: var(--fonte3);
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
@@ -71,7 +108,3 @@ footer {
     padding: 10px;
 }
 
-pre {
-    white-space: pre-line;
-    font-family: 'Sriracha', cursive;
-}
