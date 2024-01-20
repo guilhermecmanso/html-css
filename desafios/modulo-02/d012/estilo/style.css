@@ -2,38 +2,76 @@
 
 /* font-family: 'Passion One', sans-serif;
 font-family: 'Sriracha', cursive; */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
 
 header {
     background-color: black;
-    margin: -10px -8px 0px -10px;
-    padding: 0px;
+    color: white;
+    text-align: center;
 
 }
 header h1 {
     margin: auto;
-    text-align: center;
+    font-variant: small-caps;
     font-family: 'Passion One';
     font-size: 10vh;
-    color: white;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
-header p, a {
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    font-weight: bolder;
     text-decoration: none;
-    text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-header p {
-    padding-bottom: 40px;
-}
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: brown;
+    color: whitesmoke;
+    
+}
+
+section.imagem > pre {
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 400px;
+}
 
 footer {
-    color: white;
     background-color: black;
-    margin: 0px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: 'Sriracha', cursive;
 }
