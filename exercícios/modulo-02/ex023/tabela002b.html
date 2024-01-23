@@ -11,15 +11,39 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(85, 85, 85);
             color: white;
-            font-weight: bold;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 85, 85);
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(224, 224, 224);
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -27,10 +51,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <tr>
             <thead>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </thead>
         </tr>
 
@@ -83,13 +108,99 @@
                 <td>Maranhão</td>
                 <td class="num">6.775.805</td>
             </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
         </tbody>
         <tfoot>
-            <td>Total de Habitantes</td>
-            <td class="num">164.891.025</td>
+            <th scope="row"><strong>Total de Habitantes</strong></th>
+            <td class="num"><strong>164.891.025</strong></td>
         </tfoot>
         
-        
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi atque consequuntur eaque quia perferendis magni vitae nihil nemo necessitatibus nostrum autem totam iure earum labore aliquam neque et, delectus hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem maiores nulla illum accusantium, aliquid iusto itaque qui, aut hic, quam error. Rerum provident eum deleniti vel quod enim totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere delectus amet minima quam maiores accusamus, repudiandae sit, asperiores quibusdam aut! Provident, odit. Amet distinctio eveniet tempora, ut recusandae tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem cum amet in quibusdam illum impedit assumenda corrupti corporis iure nulla quisquam eveniet minus reiciendis delectus nihil quam, explicabo suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi ipsum temporibus ab eum adipisci recusandae hic minus eaque odit at, necessitatibus, in enim nisi? Corporis molestiae voluptatibus ipsum aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti error, excepturi iure aspernatur consequuntur dolores voluptatibus laborum optio quaerat assumenda magni placeat nihil a facere ea reiciendis, consectetur neque!</p>
 </body>
 </html>
