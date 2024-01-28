@@ -7,12 +7,10 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>    
-    <form action="" method="get" autocomplete="on">
+    <form action="" method="post" autocomplete="on">
         <div><br>
             <label for="iest">Estado: </label>
-            <input type="text" name="estado" id="iest" list="lstest">
-
-                
+            <input placeholder="-- Escolha --" type="text" name="estado" id="iest" list="lstest">
 
                 <datalist id="lstest">
                     <optgroup label="Região Centro-oeste">
@@ -38,7 +36,7 @@
 
         <div><br>
             <label for="iprof">Profissão: </label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
+            <input placeholder="Informe sua Profissão" type="text" name="prof" id="iprof" list="lstprof">
             <datalist id="lstprof">
                 <option>Administrador</option>
                 <option>Contador</option>
@@ -50,7 +48,7 @@
 
         <div><br>
             <label for="imsg">Mensagem: </label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <textarea placeholder="Sua Mensagem aqui..." name="msg" id="imsg" cols="30" rows="10"></textarea>
         </div>
 
         <div><br>
