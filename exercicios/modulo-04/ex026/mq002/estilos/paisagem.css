@@ -3,5 +3,8 @@
 /* Landscape */
 
 body {
-    background-color: rgb(143, 60, 5);
+    background-image: url('../imagens/cev-landscape.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
